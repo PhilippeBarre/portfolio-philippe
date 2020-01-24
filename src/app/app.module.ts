@@ -13,12 +13,14 @@ import {
 } from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
