@@ -1,5 +1,9 @@
 @import "vars";
 
+#navbar {
+  z-index: 1;
+}
+
 .header-on-bottom {
   background-color: rgba($primary, 0);
   position: absolute;
