@@ -24,6 +24,14 @@ $portfolio-philippe-theme: mat-light-theme($portfolio-philippe-primary, $portfol
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.container {
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+    padding-top: $containerPaddingTop;
+    margin-bottom: 5rem;
+}
+
 .primary-color {
     color: $primary !important;
 }

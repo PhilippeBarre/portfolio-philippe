@@ -1,3 +1,5 @@
+@import "vars";
+
 #home-cover {
     width: 100%;
     height: 100%;
@@ -10,4 +12,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@function remove-height-header($value) {
+    @return $value - 4rem;
+}
+.container {
+    padding-top: remove-height-header($containerPaddingTop);
 }
