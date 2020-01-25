@@ -2,17 +2,10 @@
 
 #home-cover {
     width: 100%;
-    height: 100%;
-    background-image: url('~/assets/img/psycho-purple.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 100%;    
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     --color-text: #{$white};
 	--color-bg: #{$black};
@@ -70,49 +63,53 @@
 	overflow: hidden;
 }
 
-.glitch__img {
+.glitch-img {
 	position: absolute;
 	top: calc(-1 * var(--gap-vertical));
 	left: calc(-1 * var(--gap-horizontal));
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
-	background: url('~/assets/img/psycho-purple.png') no-repeat 50% 0;
+	background: url('~/assets/img/psycho-purple-min.png');
 	background-color: var(--blend-color-1);
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
 }
 
-.glitch__img:nth-child(n+2) {
+.glitch-img:nth-child(n+2) {
 	opacity: 0;
 }
 
-.glitch__img:nth-child(n+2) {
+.glitch-img:nth-child(n+2) {
 	animation-duration: var(--time-anim);
 	animation-delay: var(--delay-anim);
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 
-.glitch__img:nth-child(2) {
+.glitch-img:nth-child(2) {
 	background-color: var(--blend-color-2);
 	background-blend-mode: var(--blend-mode-2);
 	animation-name: glitch-anim-1;
 }
 
-.glitch__img:nth-child(3) {
+.glitch-img:nth-child(3) {
 	background-color: var(--blend-color-3);
 	background-blend-mode: var(--blend-mode-3);
 	animation-name: glitch-anim-2;
 }
 
-.glitch__img:nth-child(4) {
+.glitch-img:nth-child(4) {
 	background-color: var(--blend-color-4);
 	background-blend-mode: var(--blend-mode-4);
 	animation-name: glitch-anim-3;
 }
 
-.glitch__img:nth-child(5) {
+.glitch-img:nth-child(5) {
 	background-color: var(--blend-color-5);
 	background-blend-mode: var(--blend-mode-5);
 	animation-name: glitch-anim-flash;
