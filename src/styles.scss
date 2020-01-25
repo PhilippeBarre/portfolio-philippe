@@ -23,3 +23,27 @@ $portfolio-philippe-theme: mat-light-theme($portfolio-philippe-primary, $portfol
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.primary-color {
+    color: $primary !important;
+}
+
+.accent-color {
+    color: $accent !important;
+}
+
+.white-color {
+    color: $white !important;
+}
+
+.black-color {
+    color: $black !important;
+}
+
+.primary-background-color {
+    background-color: $primary !important;
+}
+
+.accent-background-color {
+    background-color: $accent !important;
+}
