@@ -1,0 +1,14 @@
+{
+    "global": {
+        "languages": {
+            "en": "English",
+            "fr": "French"
+        },
+        "title": "Philippe BARRE",
+        "home": "Home",
+        "about": "About"
+    },
+    "home": {
+        "hi": "Hi, I'm {{ name }}."
+    }
+}

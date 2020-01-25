@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,14 @@ export class HeaderComponent implements OnInit {
 
   currentUrl = '';
 
-  constructor(private router: Router) {
+  objectKeys = Object.keys;
+  languages: Object
+
+  constructor(private router: Router, private translate: TranslateService) {
+
+    this.translate.stream('global.languages').subscribe((val) => {
+      this.languages = val;
+    });
 
   }
 
@@ -21,6 +29,10 @@ export class HeaderComponent implements OnInit {
         this.currentUrl = event.urlAfterRedirects;
       }
     });
+  }
+
+  changeLanguage(languageKey: string) {
+    this.translate.use(languageKey);
   }
 
 }

@@ -30,6 +30,10 @@
 	--blend-color-5: #{$primary};
 }
 
+.title-container > h1 {
+    line-height: initial;
+}
+
 @function remove-height-header($value) {
     @return $value - 4rem;
 }
