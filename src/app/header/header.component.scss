@@ -1,7 +1,12 @@
 @import "vars";
 
-.header-on-homepage {
-  background: #fff0;
+.header-on-bottom {
+  background-color: rgba($primary, 0);
   position: absolute;
   bottom: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
 }

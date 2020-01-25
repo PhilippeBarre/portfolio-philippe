@@ -1,4 +1,7 @@
-<mat-toolbar [ngClass]="{ 'header-on-homepage': currentUrl === '/home' }" color="primary">
+<mat-toolbar id="navbar" [ngClass]="{
+  'header-on-bottom': currentUrl === '/home',
+  'sticky': currentUrl !== '/home'
+}" color="primary">
   <h1>Philippe BARRE</h1>
   <button mat-button routerLink="/">Home</button>
   <button mat-button routerLink="/about">About</button>
