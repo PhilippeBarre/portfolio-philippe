@@ -11,8 +11,7 @@ export class HeaderComponent implements OnInit {
 
   currentUrl = '';
 
-  objectKeys = Object.keys;
-  languages: Object
+  languages: any;
 
   constructor(private router: Router, private translate: TranslateService) {
 
