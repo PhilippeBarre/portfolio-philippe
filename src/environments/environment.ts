@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  contentful: {
+    space: '5vxvxozt5j2q',
+    accessToken: '514bQU8hcosONTAPDLuLPtppb267HDrR5k0qESrPx-c',
+
+    contentTypeIds: {
+      timelineItem: 'timelineItem'
+    }
+  }
 };
 
 /*
