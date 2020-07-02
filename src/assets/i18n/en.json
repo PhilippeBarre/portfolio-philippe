@@ -6,7 +6,8 @@
         },
         "title": "Philippe BARRE",
         "home": "Home",
-        "about": "About"
+        "about": "About",
+        "cv": "My portfolio"
     },
     "home": {
         "hi": "Hi, I'm {{ name }}."

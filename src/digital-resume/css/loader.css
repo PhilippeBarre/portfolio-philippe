@@ -1,0 +1,24 @@
+/* LOADER */
+.loader{
+    background: url('../imgs/loader.gif') 50% 50% no-repeat, url('../imgs/slide-blue.gif');
+    cursor: wait;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.loader .progress {
+    margin-top: 60vh;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 570px) {
+    .loader {
+        background: url('../imgs/loader-small.gif') 50% 50% no-repeat, url('../imgs/slide-blue.gif');
+    }
+}

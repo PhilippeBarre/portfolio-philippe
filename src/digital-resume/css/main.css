@@ -1,0 +1,143 @@
+/* GENERAL */
+@font-face {
+    font-family: "Nasalization Bold";
+    src: url("../fonts/Nasalization Bold.ttf") format("truetype");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Roboto;
+}
+
+#home {
+    height: 100vh;
+    background: url("../imgs/backgroundHome.png") no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#pinContainer h1 {
+    font-family: Nasalization Bold;
+}
+
+#pinContainer h1:before {
+    content: "{";
+}
+
+#pinContainer h1:after {
+    content: ".}";
+}
+
+#home h1 {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+#container-go-down {
+    bottom: 15%;
+    position: fixed;
+    left: calc(50% - 25px);
+}
+
+#container-go-down i {
+    font-size: 50px;
+    transition: 1s;
+}
+
+@keyframes anim-go-down {
+    0% {
+
+    }
+    100% {
+        font-size: 40px;
+    }
+}
+
+#container-go-down i:hover {
+    animation: anim-go-down 1s infinite;
+    animation-direction: alternate;
+}
+
+.circle {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    border: 2px white solid;
+    border-radius: 50%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.circle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#description {
+    margin-top: 15vh;
+}
+
+/* SLIDES */
+#pinContainer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+#slideContainer {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+}
+
+.page1, .page2, .page3, .page4  {
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    top: 0;
+}
+.page1 {
+    /*background-color: #558ed5;*/
+    background-image: url('../imgs/slide-blue.gif');
+}
+
+.page2 {
+    /*background-color: #fbb041;*/
+    background-image: url('../imgs/slide-orange.gif');
+    left: 25%;
+}
+
+.page3{
+    /*background-color: #558ed5;*/
+    background-image: url('../imgs/slide-blue.gif');
+    left: 50%;
+}
+
+.page4{
+    /*background-color: #fbb041;*/
+    background-image: url('../imgs/slide-orange.gif');
+    left: 75%;
+}
+
+section {
+    padding: 30px;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 570px) {
+    section {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    #home h1 {
+        font-size: 4.8rem;
+    }
+}
+
+#skills .col.s8.m4 {
+    padding-left: 35px;
+}

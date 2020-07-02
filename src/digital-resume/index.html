@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Philippe BARRE <philippe.barre@epitech.eu>"/>
+        <title>Philippe BARRE - Digital resume</title>
+
+        <!-- include materialize -->
+        <link type="text/css" rel="stylesheet" href="./libs/materialize/css/materialize.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- include fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- include personnal CSS -->
+        <link type="text/css" rel="stylesheet" href="./css/main.css">
+        <link type="text/css" rel="stylesheet" href="./css/loader.css">
+        <link type="text/css" rel="stylesheet" href="./css/timeline.css">
+        <link type="text/css" rel="stylesheet" href="./css/about-me.css">
+        <link type="text/css" rel="stylesheet" href="./css/circle.css">
+        <link type="text/css" rel="stylesheet" href="./css/contact.css">
+    </head>
+    <body>
+        <!-- display a pre-loader, it is hide on main.js, on $(window).on('load'), when all elements are loaded -->
+        <div class="loader">
+            <div class="progress light-blue lighten-2">
+                <div class="indeterminate white"></div>
+            </div>
+        </div>
+
+        <div class="scrollContent">
+            <!-- Home page -->
+            <section id="home" class="white-text center">
+                <div id="description">
+                    <h1>PHILIPPE BARRE</h1>
+                    <h2>Welcome on my digital resume.</h2>
+                </div>
+                <!-- Button to simulate a scroll down -->
+                <div id="container-go-down">
+                    <div id="go-down" class="circle white-text">
+                        <i class="material-icons">expand_more</i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- #pinContainer and #slideContainer are container required to the ScollMagic slide effect -->
+            <div id="pinContainer">
+                <div id="slideContainer">
+                    <!-- Slide about me -->
+                    <section id="about-me" class="page1 white-text">
+                        <h1 class="center">ABOUT ME</h1>
+                        <div class="row">
+                            <div id="about-me-content" class="center">
+                                <span id="auto-typed"></span>
+                            </div>
+                        </div>
+                        <div class="row fixed-bottom center">
+                            <a id="cv" href="./datas/barrePhilippeCv.pdf" target="_blank">My paper CV</a>
+                        </div>
+                    </section>
+                    <!-- Slide Formation -->
+                    <section id="formations" class="page2">
+                        <h1 class="center white-text">FORMATIONS</h1>
+                        <!-- for large screen -->
+                        <div class="timeline hide-on-med-and-down">
+                            <ol>
+                                <li>
+                                    <div>
+                                        <span class="timeline-year">2015</span>
+                                        <p><i class="material-icons">school</i> Baccalauréat S SI (Engineering Science)</p>
+                                        <p><i class="material-icons">location_city</i> Lycée La Briquerie</p>
+                                        <p><i class="material-icons">location_on</i> Thionville</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="timeline-year">2015 - 2017</span>
+                                        <p><i class="material-icons">school</i> DUT Computer Science</p>
+                                        <p><i class="material-icons">location_city</i> IUT (University Institute of Technology)</p>
+                                        <p><i class="material-icons">location_on</i> Metz</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="timeline-year">2017 - 2018</span>
+                                        <p><i class="material-icons">school</i> Licence 3 Computer Science</p>
+                                        <p><i class="material-icons">location_city</i> UFR MIM (University Mathematics - Computer Science - Mechanics)</p>
+                                        <p><i class="material-icons">location_on</i> Metz</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="timeline-year">2018 - 2020</span>
+                                        <p><i class="material-icons">school</i> Program Global Tech (4th and 5th year)</p>
+                                        <p><i class="material-icons">location_city</i> Epitech</p>
+                                        <p><i class="material-icons">location_on</i> Nancy</p>
+                                    </div>
+                                </li>
+                                <li></li>
+                            </ol>
+                        </div>
+                        <!-- for medium and down screen -->
+                        <div class="hide-on-large-only">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">date_range</i> 2015</div>
+                                    <div class="collapsible-body white">
+                                        <p><i class="material-icons">school</i> Baccalauréat S SI (Engineering Science)</p>
+                                        <p><i class="material-icons">location_city</i> Lycée La Briquerie</p>
+                                        <p><i class="material-icons">location_on</i> Thionville</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">date_range</i> 2015 - 2017</div>
+                                    <div class="collapsible-body white">
+                                        <p><i class="material-icons">school</i> DUT Computer Science</p>
+                                        <p><i class="material-icons">location_city</i> IUT (University Institute of Technology)</p>
+                                        <p><i class="material-icons">location_on</i> Metz</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">date_range</i> 2017 - 2018</div>
+                                    <div class="collapsible-body white">
+                                        <p><i class="material-icons">school</i> Licence 3 Computer Science</p>
+                                        <p><i class="material-icons">location_city</i> UFR MIM (University Mathematics - Computer Science - Mechanics)</p>
+                                        <p><i class="material-icons">location_on</i> Metz</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">date_range</i> 2018 - 2020</div>
+                                    <div class="collapsible-body white">
+                                        <p><i class="material-icons">school</i> Program Global Tech (4th and 5th year)</p>
+                                        <p><i class="material-icons">location_city</i> Epitech</p>
+                                        <p><i class="material-icons">location_on</i> Nancy</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- Slide Skills -->
+                    <section id="skills" class="page3">
+                        <h1 class="center white-text">SKILLS</h1>
+                        <!-- For large screen only -->
+                        <div class="hide-on-med-and-down">
+                            <div class="row">
+                                <div class="col l3">
+                                    <div class="c100 p95 big center">
+                                        <span><img src="imgs/html.png" alt="html"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l3">
+                                    <div class="c100 p90 big center">
+                                        <span><img src="imgs/css.png" alt="css"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l3">
+                                    <div class="c100 p80 big center">
+                                        <span><img src="imgs/js.png" alt="js"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l3">
+                                    <div class="c100 p89 big center">
+                                        <span><img src="imgs/php.png" alt="php"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col l4">
+                                    <div class="c100 p75 right">
+                                        <span><img src="imgs/java.png" alt="java"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l4">
+                                    <div class="c100 p68 center">
+                                        <span><img src="imgs/cpp.png" alt="cpp"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l4">
+                                    <div class="c100 p70 left">
+                                        <span><img src="imgs/mysql.png" alt="mysql"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 center">
+                                    <div class="chip">C</div>
+                                    <div class="chip">jQuery</div>
+                                    <div class="chip">TypeScript</div>
+                                    <div class="chip">Smarty</div>
+                                    <div class="chip">Bootstrap</div>
+                                    <div class="chip">Materialize</div>
+                                    <div class="chip">Prestashop</div>
+                                    <div class="chip">CakePHP</div>
+                                    <div class="chip">CodeIgniter</div>
+                                    <div class="chip">mustache.js</div>
+                                    <div class="chip">Ionic</div>
+                                    <div class="chip">PLSQL</div>
+                                    <div class="chip">MongoDB</div>
+                                    <div class="chip">Git</div>
+                                    <div class="chip">Bitbucket</div>
+                                    <div class="chip">Docker</div>
+                                    <div class="chip">Composer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- For medium and down screen -->
+                        <div class="hide-on-large-only">
+                            <div class="row">
+                                <div class="col s4">
+                                    <div class="c100 p90">
+                                        <span><img src="imgs/html.png" alt="html"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c100 p90">
+                                        <span><img src="imgs/css.png" alt="css"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c100 p90">
+                                        <span><img src="imgs/js.png" alt="js"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c100 p90">
+                                        <span><img src="imgs/php.png" alt="html"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- for medium screen only, on small screen these 3 element are display in chip element -->
+                                <div class="col s4 hide-on-small-and-down">
+                                    <div class="c100 p75">
+                                        <span><img src="imgs/java.png" alt="java"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c100 p68">
+                                        <span><img src="imgs/cpp.png" alt="cpp"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c100 p70">
+                                        <span><img src="imgs/mysql.png" alt="mysql"></span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s8 m4">
+                                    <div class="chip hide-on-med-and-up">Java</div>
+                                    <div class="chip">C</div>
+                                    <div class="chip hide-on-med-and-up">C++</div>
+                                    <div class="chip">jQuery</div>
+                                    <div class="chip">TypeScript</div>
+                                    <div class="chip">Smarty</div>
+                                    <div class="chip">Bootstrap</div>
+                                    <div class="chip">Materialize</div>
+                                    <div class="chip">Prestashop</div>
+                                    <div class="chip">CakePHP</div>
+                                    <div class="chip">CodeIgniter</div>
+                                    <div class="chip">mustache.js</div>
+                                    <div class="chip">Ionic</div>
+                                    <div class="chip hide-on-med-and-up">MySQL</div>
+                                    <div class="chip">PLSQL</div>
+                                    <div class="chip">MongoDB</div>
+                                    <div class="chip">Git</div>
+                                    <div class="chip">Bitbucket</div>
+                                    <div class="chip">Docker</div>
+                                    <div class="chip">Composer</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- Slide Contact -->
+                    <section id="contact" class="page4">
+                        <h1 class="center white-text">CONTACT</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">Do you want to contact me ? No problem !</span>
+                                        <!-- Form contact -->
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="input-field col s6">
+                                                    <input id="firstname" name="firstname" type="text" class="validate validated">
+                                                    <label for="firstname">First Name</label>
+                                                </div>
+                                                <div class="input-field col s6">
+                                                    <input id="lastname" name="lastname" type="text" class="validate validated">
+                                                    <label for="lastname">Last Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="email" name="email" type="email" class="validate validated">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <textarea id="message" name="message" class="materialize-textarea validated" placeholder="Your message"></textarea>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-action">
+                                        <!-- Button where is bind a click event in main.js/DIGITAL_RESUME.bindAll() -->
+                                        <a id="btn-send" class="btn waves-effect waves-light col s6 m3 l2 offset-s6 offset-m9 offset-l10">Send
+                                            <i class="material-icons right">send</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- include JS files -->
+        <!-- include jQuery -->
+        <script src="./libs/jquery.min.js"></script>
+        <!-- include ScrollMagic -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        <script src="./libs/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+        <script src="./libs/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+        <script src="./libs/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+        <script src="./libs/ScrollMagic/js/tracking.js"></script>
+        <!-- include materialize -->
+        <script src="./libs/materialize/js/materialize.min.js"></script>
+        <!-- include typed.js -->
+        <script src="./libs/typed.js/typed.min.js"></script>
+        <!-- include personal JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
+
